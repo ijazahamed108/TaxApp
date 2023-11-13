@@ -73,6 +73,10 @@ This MERN (MongoDB, Express.js, React, Node.js) stack application facilitates ta
 #### Configure envs
 `docker run -d -e MONGODB_URI =my_value -e JWT_SECRET =another_value <image-name>`
 
+NOTE:alternative: in Docker desktop configure envs while running an image 
+if local mongo or mongo conatainer is running add its local Url
+env is must to run the express app
+
 #### Run Docker Containers
 
 1. Client: `docker run -d -p 3000:3000 react-app`
